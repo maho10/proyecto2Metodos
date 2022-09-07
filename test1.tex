@@ -1,0 +1,34 @@
+\documentclass{amsart}
+\usepackage{amssymb}
+\usepackage[left=1cm,right=1cm,top=3cm,bottom=1cm]{geometry}
+\begin{document}
+\[A=\left[\begin{tabular}{cccl}
+1&2\\
+-7&-5\\
+\end{tabular}\right]\]
+Si $[A|I]\to[I|A^{-1}]$
+$\Rightarrow$
+\[\left[\begin{tabular}{ccl}
+1&2&|1&0\\
+-7&-5&|0&1\\
+\end{tabular}\right]\]
+$\Rightarrow$ restamos -7 veces la fila 1 a la fila 2
+\[\left[\begin{tabular}{ccl}
+1&2&|1&0\\
+0&9&|7&1\\
+\end{tabular}\right]\]
+$\Rightarrow$ dividimos la fila 2 dentro de $\frac{9}{1}$
+\[\left[\begin{tabular}{ccl}
+1&2&|1&0\\
+0&1&|7/9&1/9\\
+\end{tabular}\right]\]
+$\Rightarrow$ restamos 2 veces la fila 2 a la fila 1
+\[\left[\begin{tabular}{ccl}
+1&0&|-5/9&-2/9\\
+0&1&|7/9&1/9\\
+\end{tabular}\right]\]
+$\therefore A^{-1}=\begin{bmatrix}
+-5/9&-2/9\\
+7/9&1/9\\
+\end{bmatrix}$
+\end{document}

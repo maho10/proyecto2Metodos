@@ -1,0 +1,2 @@
+manualDeUsuario.pdf
+exit

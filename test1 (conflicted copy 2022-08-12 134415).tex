@@ -1,0 +1,34 @@
+\documentclass{amsart}
+\usepackage{amssymb}
+\usepackage[left=1cm,right=1cm,top=3cm,bottom=1cm]{geometry}
+\begin{document}
+La matris resultante es,
+\[\begin{bmatrix}
+6789/1000&307/125&|-1/12\\
+-3141592653/1000000000&4444&|12\\
+\end{bmatrix}\]
+$\Rightarrow$ dividimos la fila 1 dentro de $\frac{6789}{1000}$
+\[\begin{bmatrix}
+1&2456/6789&|-250/20367\\
+-3141592653/1000000000&4444&|12\\
+\end{bmatrix}\]
+$\Rightarrow$ restamos $\frac{-3141592653}{1000000000}$ veces la fila 1 a la fila 2
+\[\begin{bmatrix}
+1&2456/6789&|-250/20367\\
+0&1257417989648157/282875000000&|324824802449/27156000000\\
+\end{bmatrix}\]
+$\Rightarrow$ dividimos la fila 2 dentro de $\frac{1257417989648157}{282875000000}$
+\[\begin{bmatrix}
+1&2456/6789&|-250/20367\\
+0&1&|24746275212475011/109584920738555492\\
+\end{bmatrix}\]
+$\Rightarrow$ restamos $\frac{2456}{6789}$ veces la fila 2 a la fila 1
+\[\begin{bmatrix}
+1&0&|-1190435563793549824/2273739225870328531\\
+0&1&|24746275212475011/109584920738555492\\
+\end{bmatrix}\]
+\[\therefore \begin{bmatrix}
+-1190435563793549824/2273739225870328531\\
+24746275212475011/109584920738555492\\
+\end{bmatrix}\]
+\end{document}
